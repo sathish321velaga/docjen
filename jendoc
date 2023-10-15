@@ -8,9 +8,6 @@ date=$(date)
 whereami=$(pwd)
 internet=$(netstat)
 system_info=$(uname -a)
-processes=$(ps aux)
-disk_usage=$(df -h)
-memory_usage=$(free -m)
 
 echo "hello $name"
 
@@ -45,15 +42,3 @@ echo "network status $internet"
 sleep 2
 
 echo "my system information $system_info"
-
-sleep 2
-
-echo "my process details $processes"
-
-sleep 2
-
-echo "my system disk usage $disk_usage"
-
-sleep 2
-
-echo "my system storage $memory_usage"
