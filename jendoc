@@ -1,7 +1,59 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo -n 'Enter the First Number: '
-read -r a
-echo -n 'Enter the Second Number: '
-read -r b
-echo "$a + $b = $((a+b))"
+echo "what is your device name?"
+
+read name
+user=$(whoami)
+date=$(date)
+whereami=$(pwd)
+internet=$(netstat)
+system_info=$(uname -a)
+processes=$(ps aux)
+disk_usage=$(df -h)
+memory_usage=$(free -m)
+
+echo "hello $name"
+
+sleep 3
+
+echo "how is your battary health $name"
+
+sleep 2
+
+echo "how is your cpu health $name"
+
+sleep 2
+
+echo "RAM is overloaded $name"
+
+sleep 2
+
+echo "you are in current $user"
+
+sleep 2
+
+echo "todays $date"
+
+sleep 2
+
+echo "working directory $whereami"
+
+sleep 2
+
+echo "network status $internet"
+
+sleep 2
+
+echo "my system information $system_info"
+
+sleep 2
+
+echo "my process details $processes"
+
+sleep 2
+
+echo "my system disk usage $disk_usage"
+
+sleep 2
+
+echo "my system storage $memory_usage"
